@@ -1,0 +1,777 @@
+/**
+* Template Name: iPortfolio
+* Updated: Jul 27 2023 with Bootstrap v5.3.1
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+}
+
+a {
+    color: #149ddd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #149ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: #2eafec;
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.container,
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Desktop Navigation */
+
+.navbar {
+    display: flex;
+    height: auto;
+}
+
+.navbar .logo {
+    position: relative;
+    margin-left: 40px;
+}
+
+.nav-item {
+    padding: 8px;
+}
+
+.nav-link {
+    color: #cbcddb;
+    font-size: 21px;
+}
+
+.nav-link:hover {
+    color: #eeeeee;
+    transition: color 0.2s;
+    transform: scale(1.1);
+}
+
+.nav-link:focus {
+    color: #fff;
+    border-bottom: 3px solid #149ddd;
+}
+
+.navbar-custom {
+    background-color: #00000069;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-custom.collapsing,
+.navbar-custom.collapsed {
+    background-color: #00000069;
+}
+
+.navbar .navbar-toggler {
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/pxfuel.jpg") top center;
+    background-size: cover;
+}
+
+#hero .hero-row {
+    height: 650px;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    z-index: 2;
+    position: relative;
+}
+
+#hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 95px;
+    color: #fff;
+}
+
+#hero h2 {
+    font-size: 44px;
+    font-weight: 550;
+    margin-bottom: 30px;
+    margin-left: 3px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 3px;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background: #f5f8fd;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about img {
+    width: 190px;
+    height: 220px;
+}
+
+.about .content h2 {
+    /* font-weight: 700; */
+    /* font-size: 26px; */
+    color: #173b6c;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.about .content ul strong {
+    margin-right: 10px;
+}
+
+.about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+.skills .progress {
+    height: 75px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 15px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 15px;
+    transition: 0.9s;
+    background-color: #149ddd;
+}
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+    color: #149ddd;
+}
+
+.portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background: rgba(20, 157, 221, 0.75);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: rgba(20, 157, 221, 0.95);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid #37b3ed;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+
+.portfolio-details {
+    padding-top: 40px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+    width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #149ddd;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #149ddd;
+}
+
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0;
+}
+
+.container-pr {
+    font-family: "arial";
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+}
+
+.typed-pr {
+    overflow: auto;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing-pr 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing-pr {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-color: transparent
+    }
+    50% {
+        border-color: black
+    }
+    100% {
+        border-color: transparent
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact-container {
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 0.2);
+    /* padding: 20px; */
+}
+
+.contact-card {
+    border: none;
+    margin-bottom: 5px;
+    padding: 20px 0 20px;
+    border-bottom: 1px dotted #149ddd;
+    font-size: 20px;
+}
+
+.contact-card i {
+    font-size: 28px;
+    color: #149ddd;
+    margin-right: 20px;
+}
+
+.contact-card strong {
+    display: none;
+}
+
+.contact-card:first-child {
+    border-top: none;
+    /* margin-top: 50px; */
+}
+
+.contact-card-container {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details-heading {
+    margin-bottom: 40px;
+}
+
+.contact {
+    padding-bottom: 130px;
+}
+
+
+/* @keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+    padding: 20px 0;
+    background: #0e2442;
+}
+
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #0e2442;
+    content: "/";
+}
+
+.nav-link-pr {
+    color: #fff;
+}
+
+.nav-link-pr:hover {
+    color: #d1d1d1;
+    transition: color 0.2s;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+    .breadcrumbs ol {
+        display: block;
+    }
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    color: #f4f6fd;
+    font-size: 14px;
+    height: 60px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #040b14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
+}
+
+
+/* Default style for larger screens */
+
+.info-text {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .info-text {
+        font-size: 18px;
+    }
+}
+
+
+/* Media query for screens smaller than 480px (adjust breakpoint as needed) */
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        position: relative;
+        margin-left: 10px;
+    }
+    .info-text {
+        font-size: 16px;
+    }
+    .about .content ul li span,
+    .contact-card,
+    .skills .progress .skill {
+        font-size: 16px;
+    }
+    .skills .progress-bar-wrap,
+    .skills .progress-bar {
+        height: 12px;
+    }
+    .contact-card i {
+        font-size: 20px;
+    }
+    #footer .copyright {
+        font-size: 13px;
+    }
+}

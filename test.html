@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS for the centered container with shadow and curved border */
+        
+        .contact-container {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        /* Additional styling for the contact details */
+        
+        .contact-card {
+            border: none;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        
+        .contact-card i {
+            font-size: 24px;
+            color: #149ddd;
+            /* Customize the icon color */
+        }
+        
+        .contact-card strong {
+            display: none;
+            /* Hide the element names */
+        }
+        /* Remove the dotted line from the first element */
+        
+        .contact-card:first-child {
+            border-top: none;
+        }
+        /* Reduce the width of the card */
+        
+        .contact-card-container {
+            max-width: 400px;
+            /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            /* Center the card horizontally */
+        }
+        /* Add space to the bottom of the contact details heading */
+        
+        .contact-details-heading {
+            margin-bottom: 20px;
+        }
+        /* Add a line below the email */
+        
+        .contact-card:last-child {
+            border-bottom: 1px dotted #149ddd;
+        }
+        /* Center-align the content within the contact cards */
+        
+        .contact-card-content {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 contact-card-container">
+                <div class="card contact-container">
+                    <div class="card-body">
+                        <h2 class="card-title text-center contact-details-heading">Contact Details</h2>
+                        <ul class="list-unstyled">
+                            <li class="contact-card">
+                                <div class="contact-card-content">
+                                    <i class="fas fa-phone"></i> +123-456-7890
+                                </div>
+                            </li>
+                            <li class="contact-card">
+                                <div class="contact-card-content">
+                                    <i class="fas fa-map-marker-alt"></i> 123 Main St, City, Country
+                                </div>
+                            </li>
+                            <li class="contact-card">
+                                <div class="contact-card-content">
+                                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a>
+                                </div>
+                            </li>
+                            <li class="contact-card">
+                                <div class="contact-card-content">
+                                    <i class="far fa-envelope"></i> your.email@gmail.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
